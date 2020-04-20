@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Przelicznik Metryczny</h1>
+        <div class="row col">
+            <form method="post" action="/convertMeasure" >
+                <div class="form-group">
+                    <input type="text" class="form-control" name="meters" placeholder="metry">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="centimeters" placeholder="centymetry">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="milimeters" placeholder="milimetry">
+                </div>
+                <button type="submit"  class="btn btn-light"> Prześlij </button>
+            </form>
+        </div>
+
+        <h1>Przelicznik Wag</h1>
+        <div class="row col">
+            <form method="post" action="/convertWeight" >
+                <div class="form-group">
+                    <input type="text" class="form-control" name="kilograms" placeholder="kilogramy">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="grams" placeholder="gramy">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="miligrams" placeholder="miligramy">
+                </div>
+                <button type="submit"  class="btn btn-light"> Prześlij </button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
